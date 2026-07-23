@@ -58,7 +58,7 @@ const translations = {
     location_hours_label: "სამუშაო საათები",
     location_hours: "24 საათი / 7 დღე",
     location_directions: "მარშრუტის ნახვა",
-    footer_desc: "კომფორტული სასტუმრო ნიკეაში — სადაც ყოველი სტუმარი თავს სახლში გრ�[...]",
+    footer_desc: "კომფორტული სასტუმრო ნიკეაში — სადაც ყოველი სტუმარი თავს სახლში გრძნობს",
     footer_nav_title: "ნავიგაცია",
     footer_contact_title: "კონტაქტი",
     footer_rights: "© 2026 პარკ ჰოტელი იმერი ქუთაისი. ყველა უფლება დაცულია.",
