@@ -12,12 +12,13 @@ const translations = {
     nav_rooms: "ოთახები",
     nav_gallery: "გალერეა",
     nav_location: "ადგილმდებარეობა",
+    nav_contact: "კონტაქტები",
     hero_badge: "🏔️ ნიკეა, იმერეთი",
     hero_tagline: "ადგილი, სადაც ბუნება და კომფორტი ერთ სივრცეში ერთიანდება",
     hero_cta: "დაჯავშნეთ ახლა",
     about_title: "ჩვენს შესახებ",
-    about_p1: "პარკ ჰოტელი იმერი ადგილი, სადაც ბუნება, სიმშვიდე და კომფორტი ერთიანდება. ჩვენი სასტუმრო მდებარეობს ქუთაისის ერთ-ერთ ყველაზე მშვიდ და გამწვანებულ ადგილას, ულამაზესი პარკისა და ტყის გარემოცვაში. აქ ყოველი დილა იწყება ჩიტების ჭიკჭიკით, სუფთა ჰაერითა და ბუნების საოცარი ხედებით, რაც თქვენს დასვენებას განსაკუთრებულ გამოცდილებად აქცევს. პარკ ჰოტელი იმერი იდეალური არჩევანია როგორც ოჯახური დასვენებისთვის, ასევე საქმიანი მოგზაურობისთვის. სტუმრებს ვთავაზობთ კომფორტულ ნომრებს, გემრიელ საუზმეს, დაცულ პარკინგს და 24/7 მომსახურებას. ჩვენთვის მთავარი პრიორიტეტია, თითოეულმა სტუმარმა თავი იგრძნოს ბუნებასთან ახლოს, მშვიდ და მყუდრო გარემოში. პარკ ჰოტელი იმერი — ადგილი, სადაც ბუნება და კომფორტი ჰარმონიულად ერწყმის ერთმანეთს.",
-    about_p2: "ჩვენ გთავაზობთ სუფთა, კომფორტულ ოთახებს, მეგობრულ სერვისს და ჩვენს სა[...]",
+    about_p1: "პარკ ჰოტელი იმერი ადგილი, სადაც ბუნება, სიმშვიდე და კომფორტი ერთიანდება. ჩვენი სასტუმრო მდებარეობს ქუთაისის ერთ-ერთ ყველაზე მშვიდ და გამწვანებულ არეში, რომელიც აკრავს ბუნების ლამაზი პარკით.",
+    about_p2: "ჩვენ გთავაზობთ სუფთა, კომფორტულ ოთახებს, მეგობრულ სერვისს და ჩვენს ტერასას, სადაც ქვემოთ მდელი და მთები ჩანს.",
     stat_rooms: "ოთახის ტიპი",
     stat_service: "სერვისი",
     stat_view: "მთის ხედი",
@@ -25,19 +26,19 @@ const translations = {
     rooms_title: "ოთახები",
     room_single_badge: "ერთადგილიანი",
     room_single_name: "ერთადგილიანი",
-    room_single_desc: "კომფორტული ოთახი ერთი ადამიანისთვის, ყველა საჭირო კეთილმოწყობი�[...]",
+    room_single_desc: "კომფორტული ოთახი ერთი ადამიანისთვის, ყველა საჭირო კეთილმოწყობით.",
     room_double_badge: "ორადგილიანი",
     room_double_name: "ორადგილიანი",
-    room_double_desc: "ფართო ოთახი ორი ადამიანისთვის, დასვენებისა და კომფორტის ყველა პ��[...]",
+    room_double_desc: "ფართო ოთახი ორი ადამიანისთვის, დასვენებისა და კომფორტის ყველა პირობით.",
     room_triple_badge: "სამადგილიანი",
     room_triple_name: "სამადგილიანი",
-    room_triple_desc: "შესაფერსია ოჯახებისა და მეგობრების ჯგუფებისთვის, ფართო და კომფ[...]",
+    room_triple_desc: "შესაფერისია ოჯახებისა და მეგობრების ჯგუფებისთვის, ფართო და კომფორტული.",
     room_luxury_badge: "ლუქსი",
     room_luxury_name: "ლუქს ოთახი",
-    room_luxury_desc: "პრემიუმ ოთახი საუკეთესო ხედებით, განსაკუთრებული სტუმრებისთვის.[...]",
+    room_luxury_desc: "პრემიუმ ოთახი საუკეთესო ხედებით, განსაკუთრებული სტუმრებისთვის.",
     room_apartment_badge: "აპარტამენტი",
     room_apartment_name: "აპარტამენტი",
-    room_apartment_desc: "1 დიდი საწოლი, 2 პატარა საწოლი, 2 სააბაზანო და მოსაწდელი ოთახი — იდე[...]",
+    room_apartment_desc: "1 დიდი საწოლი, 2 პატარა საწოლი, 2 სააბაზანო და მოსაწდელი ოთახი — იდეალური ოჯახებისთვის.",
     per_night: "/ ღამე",
     room_btn: "დაჯავშნა",
     gallery_title: "გალერეა",
@@ -58,12 +59,11 @@ const translations = {
     location_hours_label: "სამუშაო საათები",
     location_hours: "24 საათი / 7 დღე",
     location_directions: "მარშრუტის ნახვა",
-    footer_desc: "კომფორტული სასტუმრო ნიკეაში — სადაც ყოველი სტუმარი თავს სახლში გრძნობს",
+    footer_desc: "კომფორტული სასტუმრო ნიკეაში — სადაც ყოველი სტუმარი თავს სახლში გრძნობს.",
     footer_nav_title: "ნავიგაცია",
     footer_contact_title: "კონტაქტი",
     footer_rights: "© 2026 პარკ ჰოტელი იმერი ქუთაისი. ყველა უფლება დაცულია.",
     btn_more: "მეტი",
-    
   },
 
   en: {
@@ -72,11 +72,12 @@ const translations = {
     nav_rooms: "Rooms",
     nav_gallery: "Gallery",
     nav_location: "Location",
+    nav_contact: "Contact",
     hero_badge: "🏔️ Nikea, Imereti",
     hero_tagline: "A place where nature and comfort unite in a single space.",
     hero_cta: "Book Now",
     about_title: "About Us",
-    about_p1: "Park Hotel Imeri is a place where nature, tranquility and comfort come together. Our hotel is located in one of the quietest and greenest areas of Kutaisi, surrounded by a beautiful park and forest. Here every morning begins with the chirping of birds, fresh air and amazing views of nature, which make your stay a special experience. Park Hotel Imeri is an ideal choice both for family vacations and for business trips. We offer our guests comfortable rooms, a tasty breakfast, secure parking and 24/7 service. Our main priority is that every guest feels close to nature in a calm and cozy environment. Park Hotel Imeri — a place where nature and comfort harmoniously blend.",
+    about_p1: "Park Hotel Imeri is a place where nature, tranquility and comfort come together. Our hotel is located in one of the quietest and greenest areas of Kutaisi, surrounded by a beautiful park.",
     about_p2: "We offer clean, comfortable rooms, friendly service, and our lovely terrace with beautiful views of the surrounding landscape.",
     stat_rooms: "Room Types",
     stat_service: "Service",
@@ -131,12 +132,13 @@ const translations = {
     nav_rooms: "Номера",
     nav_gallery: "Галерея",
     nav_location: "Расположение",
+    nav_contact: "Контакты",
     hero_badge: "🏔️ Никеа, Имерети",
     hero_tagline: "Место, где природа и комфорт сливаются воедино.",
     hero_cta: "Забронировать",
     about_title: "О нас",
-    about_p1: "Парк Отель Имери — это место, где природа, спокойствие и комфорт объединяются. Наш отель расположен в одной из самых тихих и озеленённых районов Кутаиси, в окружении прекрасного парка и леса. Здесь каждое утро начинается с щебета птиц, свежего воздуха и удивительных видов природы, которые делают ваш отдых особенным. Парк Отель Имери — идеальный выбор как для семейного отдыха, так и для деловых поездок. Мы предлагаем гостям комфортные номера, вкусный завтрак, охраняемую парковку и обслуживание 24/7. Наш приоритет — чтобы каждый гость чувствовал себя близко к природе в спокойной и уютной обстановке. Парк Отель Имери — место, где природа и комфорт гармонично сочетаются.",
-    about_p2: "Мы предлагаем чистые, уютные номера, дружелюбный сервис и нашу прекрасную террасу с красивым видом н�[...]",
+    about_p1: "Парк Отель Имери — это место, где природа, спокойствие и комфорт объединяются. Наш отель расположен в одном из самых тихих и зеленых районов Кутаиси, окруженный красивым парком.",
+    about_p2: "Мы предлагаем чистые, уютные номера, дружелюбный сервис и нашу прекрасную террасу с красивым видом на окружающий ландшафт.",
     stat_rooms: "Типа номеров",
     stat_service: "Сервис",
     stat_view: "Вид на горы",
@@ -172,7 +174,7 @@ const translations = {
     location_title: "Расположение",
     location_find_us: "Как нас найти",
     location_address_label: "Адрес",
-    location_address: "Никеა, Имерети, Грузия",
+    location_address: "Никеа, Имерети, Грузия",
     location_phone_label: "Телефон",
     location_hours_label: "Часы работы",
     location_hours: "24 часа / 7 дней",
@@ -190,11 +192,12 @@ const translations = {
     nav_rooms: "Zimmer",
     nav_gallery: "Galerie",
     nav_location: "Lage",
+    nav_contact: "Kontakt",
     hero_badge: "🏔️ Nikea, Imereti",
     hero_tagline: "Ein Ort, an dem sich Natur und Komfort an einem einzigen Ort vereinen.",
     hero_cta: "Jetzt buchen",
     about_title: "Über uns",
-    about_p1: "Das Park Hotel Imeri ist ein Ort, an dem Natur, Ruhe und Komfort zusammenkommen. Unser Hotel befindet sich in einer der ruhigsten und grünsten Gegenden von Kutaissi, umgeben von einem wunderschönen Park und Wald. Hier beginnt jeder Morgen mit dem Zwitschern der Vögel, frischer Luft und beeindruckenden Naturblicken, die Ihren Aufenthalt zu einem besonderen Erlebnis machen. Das Park Hotel Imeri ist sowohl für Familienurlaube als auch für Geschäftsreisen die ideale Wahl. Wir bieten unseren Gästen komfortable Zimmer, ein schmackhaftes Frühstück, gesicherten Parkplatz und Service rund um die Uhr. Unsere oberste Priorität ist, dass sich jeder Gast in einer naturnahen, ruhigen und gemütlichen Umgebung wohlfühlt. Park Hotel Imeri — ein Ort, an dem Natur und Komfort harmonisch verschmelzen.",
+    about_p1: "Das Park Hotel Imeri ist ein Ort, an dem Natur, Ruhe und Komfort zusammenkommen. Unser Hotel befindet sich in einer der ruhigsten und grünsten Gegenden von Kutaissi, umgeben von einem schönen Park.",
     about_p2: "Wir bieten saubere, komfortable Zimmer, freundlichen Service und unsere schöne Terrasse mit herrlichem Blick auf die umliegende Landschaft.",
     stat_rooms: "Zimmertypen",
     stat_service: "Service",
@@ -347,10 +350,10 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// ==================== SCROLL TO CONTACT ====================
-function scrollToContact() {
-  const contactEl = document.getElementById('contact');
-  if (contactEl) contactEl.scrollIntoView({ behavior: 'smooth' });
+// ==================== SCROLL TO FOOTER ====================
+function scrollToFooter() {
+  const footer = document.querySelector('footer');
+  if (footer) footer.scrollIntoView({ behavior: 'smooth' });
 }
 
 // ROOM LIGHTBOX
@@ -405,4 +408,4 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-// შექმნა დავით ენდელაძემ 
+// შექმნა დავით ენდელაძემ
