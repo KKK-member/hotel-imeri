@@ -61,7 +61,7 @@ const translations = {
     footer_desc: "კომფორტული სასტუმრო ნიკეაში — სადაც ყოველი სტუმარი თავს სახლში გრძნობს.",
     footer_nav_title: "ნავიგაცია",
     footer_contact_title: "კონტაქტი",
-    footer_rights: "© 2024 პარკ ჰოტელი იმერი ქუთაისი. ყველა უფლება დაცულია.",
+    footer_rights: "© 2026 პარკ ჰოტელი იმერი ქუთაისი. ყველა უფლება დაცულია.",
     btn_more: "მეტი",
     
   },
@@ -121,7 +121,7 @@ const translations = {
     footer_desc: "Comfortable hotel in Nikea — where every guest feels right at home.",
     footer_nav_title: "Navigation",
     footer_contact_title: "Contact",
-    footer_rights: "© 2024 Park Hotel Imeri Kutaisi. All rights reserved.",
+    footer_rights: "© 2026 Park Hotel Imeri Kutaisi. All rights reserved.",
     btn_more: "More",
   },
 
@@ -180,7 +180,7 @@ const translations = {
     footer_desc: "Уютный отель в Никеа — где каждый гость чувствует себя как дома.",
     footer_nav_title: "Навигация",
     footer_contact_title: "Контакт",
-    footer_rights: "© 2024 Парк Отель Имери Кутаиси. Все права защищены.",
+    footer_rights: "© 2026 Парк Отель Имери Кутаиси. Все права защищены.",
     btn_more: "Больше",
   },
 
@@ -239,7 +239,7 @@ const translations = {
     footer_desc: "Gemütliches Hotel in Nikea — wo sich jeder Gast wie zu Hause fühlt.",
     footer_nav_title: "Navigation",
     footer_contact_title: "Kontakt",
-    footer_rights: "© 2024 Park Hotel Imeri Kutaissi. Alle Rechte vorbehalten.",
+    footer_rights: "© 2026 Park Hotel Imeri Kutaissi. Alle Rechte vorbehalten.",
     btn_more: "Mehr",
   }
 };
