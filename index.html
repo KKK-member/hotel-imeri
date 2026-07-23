@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ka" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>პარკ ჰოტელი იმერი ქუთაისი</title>
+  <meta name="description"
+    content="იმერი — კომფორტული სასტუმრო ნიკეაში, იმერეთი. Imeri hotel in Nikea, Imereti, Georgia. Comfortable rooms, mountain views, warm hospitality.">
+  <meta name="keywords" content="იმერი, სასტუმრო ნიკეა, Imeri, hotel Nikea, Georgia hotel, Imereti">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="logo/IMERI_Park_Hotel_logo_redesign_202607231140.jpeg">
+</head>
+
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon"></div>
+
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" data-i18n="nav_home">მთავარი</a></li>
+        <li><a href="#rooms" data-i18n="nav_rooms">ოთახები</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">გალერეა</a></li>
+        <li><a href="#location" data-i18n="nav_location">ადგილმდებარეობა</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="lang-btn active" id="btn-ka" onclick="setLang('ka')" aria-label="Georgian">
+          <span class="lang-flag">🇬🇪</span><span class="lang-code">ქარ</span>
+        </button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-label="English">
+          <span class="lang-flag">🇺🇸</span><span class="lang-code">EN</span>
+        </button>
+        <button class="lang-btn" id="btn-ru" onclick="setLang('ru')" aria-label="Russian">
+          <span class="lang-flag">🇷🇺</span><span class="lang-code">RU</span>
+        </button>
+        <button class="lang-btn" id="btn-de" onclick="setLang('de')" aria-label="German">
+          <span class="lang-flag">🇩🇪</span><span class="lang-code">DE</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" onclick="closeMenu()" data-i18n="nav_home">მთავარი</a>
+    <a href="#rooms" onclick="closeMenu()" data-i18n="nav_rooms">ოთახები</a>
+    <a href="#gallery" onclick="closeMenu()" data-i18n="nav_gallery">გალერეა</a>
+    <a href="#location" onclick="closeMenu()" data-i18n="nav_location">ადგილმდებარეობა</a>
+    <div class="mobile-lang">
+      <button class="lang-btn" onclick="setLang('ka');closeMenu()">🇬🇪 ქარ</button>
+      <button class="lang-btn" onclick="setLang('en');closeMenu()">🇺🇸 EN</button>
+      <button class="lang-btn" onclick="setLang('ru');closeMenu()">🇷🇺 RU</button>
+      <button class="lang-btn" onclick="setLang('de');closeMenu()">🇩🇪 DE</button>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero_badge">🏔️ ნიკეა, იმერეთი</div>
+      <h1 class="hero-title" data-i18n="brand">პარკ ჰოტელი იმერი ქუთაისი</h1>
+      <p class="hero-tagline" data-i18n="hero_tagline">კომფორტი და სითბო ნიკეაში</p>
+      <a href="https://booking-116243.otelms.com/booking/rooms" target="_blank" class="hero-cta" id="hero-cta-btn">
+        <span>🏨</span>
+        <span data-i18n="hero_cta">დაჯავშნეთ ახლა</span>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <span>↓</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 data-i18n="about_title">ჩვენს შესახებ</h2>
+          <p data-i18n="about_p1">იმერი — ეს არის ადგილი, სადაც სამხრეთი კავკასიის სილამაზე შეხვდება ნამდვილ
+            სიამოვნებასა და კომფორტს. ჩვენი სასტუმრო განლაგებულია ლამაზ ნიკეაში.</p>
+          <p data-i18n="about_p2">ჩვენ გთავაზობთ სუფთა, კომფორტულ ოთახებს, მეგობრულ სერვისს და ჩვენს სასიამოვნო ტერასას,
+            საიდანაც გამშვენიერებული ხედი იხსნება.</p>
+          <div class="about-stats">
+            <div class="stat-card reveal reveal-delay-1">
+              <span class="stat-number">5</span>
+              <span class="stat-label" data-i18n="stat_rooms">ოთახის ტიპი</span>
+            </div>
+            <div class="stat-card reveal reveal-delay-2">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label" data-i18n="stat_service">სერვისი</span>
+            </div>
+            <div class="stat-card reveal reveal-delay-3">
+              <span class="stat-number">🏔️</span>
+              <span class="stat-label" data-i18n="stat_view">მთის ხედი</span>
+            </div>
+            <div class="stat-card reveal reveal-delay-4">
+              <span class="stat-number">🍽️</span>
+              <span class="stat-label" data-i18n="stat_food">კვება</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal reveal-delay-2">
+          <!-- Replace with your entrance/exterior photo -->
+          <img src="images/sun.jpg" alt="იმერი შესასვლელი" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ROOMS ==================== -->
+  <section id="rooms">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="rooms_title">ოთახები</h2>
+      <div class="divider reveal"></div>
+      <div class="rooms-grid">
+
+        <!-- SINGLE -->
+        <div class="room-card reveal reveal-delay-1">
+          <div class="room-image" style="cursor: pointer;"
+            onclick="openRoomLightbox(this, 'images/singleLeft.jpg', 'images/singeRight.jpg')">
+            <!-- Replace with your single room photo -->
+            <img src="images/single.jpg" alt="ერთადგილიანი ოთახი" loading="lazy">
+            <span class="room-badge" data-i18n="room_single_badge">ერთადგილიანი</span>
+            <div class="gallery-overlay"><span>🔍</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-name" data-i18n="room_single_name">ერთადგილიანი</h3>
+            <p class="room-desc" data-i18n="room_single_desc">კომფორტული ოთახი ერთი ადამიანისთვის, ყველა საჭირო
+              კეთილმოწყობით.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <strong id="price-single">60 ₾</strong>
+                <span data-i18n="per_night">/ ღამე</span>
+              </div>
+              <a class="room-btn" href="https://booking-116243.otelms.com/booking/rooms" target="_blank"
+                data-i18n="room_btn">დაჯავშნა</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOUBLE -->
+        <div class="room-card reveal reveal-delay-2">
+          <div class="room-image" style="cursor: pointer;"
+            onclick="openRoomLightbox(this, 'images/doubleLeft.jpg', 'images/doubleRight.jpg')">
+            <!-- Replace with your double room photo -->
+            <img src="images/double.jpg" alt="ორადგილიანი ოთახი" loading="lazy">
+            <span class="room-badge" data-i18n="room_double_badge">ორადგილიანი</span>
+            <div class="gallery-overlay"><span>🔍</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-name" data-i18n="room_double_name">ორადგილიანი</h3>
+            <p class="room-desc" data-i18n="room_double_desc">ფართო ოთახი ორი ადამიანისთვის, დასვენებისა და კომფორტის
+              ყველა პირობით.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <strong id="price-double">120 ₾</strong>
+                <span data-i18n="per_night">/ ღამე</span>
+              </div>
+              <a class="room-btn" href="https://booking-116243.otelms.com/booking/rooms" target="_blank"
+                data-i18n="room_btn">დაჯავშნა</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRIPLE -->
+        <div class="room-card reveal reveal-delay-3">
+          <div class="room-image" style="cursor: pointer;"
+            onclick="openRoomLightbox(this, 'images/tripleLeft.jpg', 'images/tripleRight.jpg')">
+            <!-- Replace with your triple room photo -->
+            <img src="images/triple.jpg" alt="სამადგილიანი ოთახი" loading="lazy">
+            <span class="room-badge" data-i18n="room_triple_badge">სამადგილიანი</span>
+            <div class="gallery-overlay"><span>🔍</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-name" data-i18n="room_triple_name">სამადგილიანი</h3>
+            <p class="room-desc" data-i18n="room_triple_desc">შესაფერისია ოჯახებისა და მეგობრების ჯგუფებისთვის, ფართო და
+              კომფორტული.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <strong id="price-triple">150 ₾</strong>
+                <span data-i18n="per_night">/ ღამე</span>
+              </div>
+              <a class="room-btn" href="https://booking-116243.otelms.com/booking/rooms" target="_blank"
+                data-i18n="room_btn">დაჯავშნა</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LUXURY -->
+        <div class="room-card reveal reveal-delay-4">
+          <div class="room-image" style="cursor: pointer;"
+            onclick="openRoomLightbox(this, 'images/luxRight1.jpg', 'images/luxRight2.jpg', 'images/luxLeft1.jpg', 'images/luxLeft2.jpg')">
+            <!-- Replace with your luxury room photo -->
+            <img src="images/lux.jpg" alt="ლუქს ოთახი" loading="lazy">
+            <span class="room-badge" data-i18n="room_luxury_badge">ლუქსი</span>
+            <div class="gallery-overlay"><span>🔍</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-name" data-i18n="room_luxury_name">ლუქს ოთახი</h3>
+            <p class="room-desc" data-i18n="room_luxury_desc">პრემიუმ ოთახი საუკეთესო ხედებით, განსაკუთრებული
+              სტუმრებისთვის.</p>
+            <div class="room-footer">
+              <div class="room-price">
+                <strong id="price-luxury">150 ₾</strong>
+                <span data-i18n="per_night">/ ღამე</span>
+              </div>
+              <a class="room-btn" href="https://booking-116243.otelms.com/booking/rooms" target="_blank"
+                data-i18n="room_btn">დაჯავშნა</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- APARTMENT -->
+        <div class="room-card reveal reveal-delay-1">
+          <div class="room-image" style="cursor: pointer;"
+            onclick="openRoomLightbox(this, 'images/apaLeft1.jpg', 'images/apaLeft2.jpg', 'images/apaRight1.jpg', 'images/apaRight2.jpg')">
+            <!-- Replace with your apartment photo -->
+            <img src="images/apartmanet.jpg" alt="აპარტამენტი" loading="lazy">
+            <span class="room-badge" data-i18n="room_apartment_badge">აპარტამენტი</span>
+            <div class="gallery-overlay"><span>🔍</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-name" data-i18n="room_apartment_name">აპარტამენტი</h3>
+            <p class="room-desc" data-i18n="room_apartment_desc">1 დიდი საწოლი, 2 პატარა საწოლი, 2 სააბაზანო და
+              მოსაცდელი ოთახი — იდეალური ოჯახებისთვის.</p>
+
+            <div class="room-footer">
+              <div class="room-price">
+                <strong id="price-apartment">200 ₾</strong>
+                <span data-i18n="per_night">/ ღამე</span>
+              </div>
+              <a class="room-btn" href="https://booking-116243.otelms.com/booking/rooms" target="_blank"
+                data-i18n="room_btn">დაჯავშნა</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="gallery_title">გალერეა</h2>
+      <div class="divider reveal"></div>
+      <div class="gallery-grid">
+        <!-- Slot 1 — large, replace with hotel exterior or terrace photo -->
+        <div class="gallery-item reveal" onclick="openLightbox(this)">
+          <img src="images/bar.jpg" alt="სასტუმრო ტერასა" loading="lazy">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <!-- Slot 2 — replace with your photo -->
+        <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
+          <img src="images/gallery2.jpg" alt="შესასვლელი" loading="lazy">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <!-- Slot 3 — replace with your photo -->
+        <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(this)">
+          <img src="images/gallerynotcool.jpg" alt="ტერასა" loading="lazy">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <!-- Slot 4 — large, replace with your photo -->
+        <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
+          <img src="images/gallery4.jpg" alt="ლუქს ოთახი" loading="lazy">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <!-- Slot 5 — replace with your photo -->
+        <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(this)">
+          <img src="images/gallery1.jpg" alt="ოთახი" loading="lazy">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <!-- Slot 6 — replace with your photo -->
+        <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox(this)">
+          <img src="images/gallery66.jpg" alt="ოთახი" loading="lazy">
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- GALLERY MORE BUTTON -->
+    <div class="gallery-more-wrapper">
+      <!-- Just replace the '#' with your link later -->
+      <a href="https://www.booking.com/hotel/ge/imeri-park.en-gb.html?aid=304142&label=gen173rf-10CAsoUkIKaW1lcmktcGFya0gJWANoUogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAaICDjEyNy4wLjAuMTo1NTAwqAIBuAKb_IbTBsACAdICJDRkOWY3ODVkLWEyNGUtNDVhMC1hZWI3LWMzNzdmZjc5ZDAyZdgCAeACAQ&sid=4c31eea30400950214543036dfade3d7&checkin=2026-08-19&checkout=2026-08-20&dest_id=900049994&dest_type=city&dist=0&do_availability_check=1&group_adults=1&group_children=0&hp_avform=1&hp_group_set=0&no_rooms=1&origin=hp&sb_price_type=total&src=hotel&type=total&activeTab=photosGallery#policies"
+        target="_blank" class="btn-more" data-i18n="btn_more">მეტი</a>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Gallery image">
+  </div>
+
+  <!-- ROOM LIGHTBOX -->
+  <div class="lightbox" id="roomLightbox" onclick="closeRoomLightbox(event)">
+    <button class="lightbox-close" onclick="closeRoomLightbox(event)">✕</button>
+    <div class="room-lightbox-content">
+      <div class="room-lightbox-side-col">
+        <img class="room-lightbox-side" id="roomLightLeft1" src="" alt="Side 1">
+        <img class="room-lightbox-side" id="roomLightLeft2" src="" alt="Side 2">
+      </div>
+      <img class="room-lightbox-main" id="roomLightMain" src="" alt="Room Main">
+      <div class="room-lightbox-side-col">
+        <img class="room-lightbox-side" id="roomLightRight1" src="" alt="Side 3">
+        <img class="room-lightbox-side" id="roomLightRight2" src="" alt="Side 4">
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== AMENITIES ==================== -->
+  <section id="amenities">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="amenities_title">სერვისები</h2>
+      <div class="divider reveal"></div>
+      <div class="amenities-grid">
+        <div class="amenity-card reveal reveal-delay-1">
+          <span class="amenity-icon">📶</span>
+          <div class="amenity-name" data-i18n="amenity_wifi">უფასო Wi-Fi</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-2">
+          <span class="amenity-icon">🚗</span>
+          <div class="amenity-name" data-i18n="amenity_parking">პარკინგი</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-3">
+          <span class="amenity-icon">☕</span>
+          <div class="amenity-name" data-i18n="amenity_breakfast">საუზმე</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-4">
+          <span class="amenity-icon">🌿</span>
+          <div class="amenity-name" data-i18n="amenity_terrace">ტერასა</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-1">
+          <span class="amenity-icon">📺</span>
+          <div class="amenity-name" data-i18n="amenity_tv">ტელევიზია</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-2">
+          <span class="amenity-icon">🏔️</span>
+          <div class="amenity-name" data-i18n="amenity_view">მთის ხედი</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-3">
+          <span class="amenity-icon">❄️</span>
+          <div class="amenity-name" data-i18n="amenity_ac">კონდიციონერი</div>
+        </div>
+        <div class="amenity-card reveal reveal-delay-4">
+          <span class="amenity-icon">🍽️</span>
+          <div class="amenity-name" data-i18n="amenity_restaurant">კაფე / რესტორანი</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATION ==================== -->
+  <section id="location">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="location_title">ადგილმდებარეობა</h2>
+      <div class="divider reveal"></div>
+      <div class="location-grid">
+        <div class="location-info reveal">
+          <h3 data-i18n="location_find_us">როგორ მოგვიძებნოთ</h3>
+
+          <div class="location-detail">
+            <span class="location-detail-icon">📍</span>
+            <div>
+              <strong data-i18n="location_address_label">მისამართი</strong>
+              <span data-i18n="location_address">ნიკეა, იმერეთი, საქართველო</span>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <span class="location-detail-icon">📞</span>
+            <div>
+              <strong data-i18n="location_phone_label">ტელეფონი</strong>
+              <!-- UPDATE: Replace with real phone number -->
+              <span><a href="tel: 577 15 06 21"> 577 15 06 21</a></span>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <span class="location-detail-icon">🕐</span>
+            <div>
+              <strong data-i18n="location_hours_label">სამუშაო საათები</strong>
+              <span data-i18n="location_hours">24 საათი / 7 დღე</span>
+            </div>
+          </div>
+
+          <a href="https://maps.app.goo.gl/1CHhHLCgP8ttWY4r7" target="_blank" class="directions-btn">
+            <span>🗺️</span>
+            <span data-i18n="location_directions">მარშრუტის ნახვა</span>
+          </a>
+        </div>
+
+        <div class="map-wrapper reveal reveal-delay-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.486299044698!2d42.68875337638676!3d42.22542267120579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405cf2b92d8eec25%3A0xbd73788b3bb6cac6!2z4YOe4YOQ4YOg4YOZIOGDsOGDneGDouGDlOGDmiDhg5jhg5vhg5Thg6Dhg5g!5e0!3m2!1ska!2sge!4v1784800741498!5m2!1ska!2sge"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div class="logo-icon" style="width: 48px; height: 48px;"></div>
+            <span class="logo-text-footer" data-i18n="brand">პარკ ჰოტელი იმერი ქუთაისი</span>
+          </div>
+          <p data-i18n="footer_desc">კომფორტული სასტუმრო ნიკეაში — სადაც ყოველი სტუმარი თავს სახლში გრძნობს.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_nav_title">ნავიგაცია</h4>
+          <ul>
+            <li><a href="#hero" data-i18n="nav_home">🏠 სახლი</a></li>
+            <li><a href="#rooms" data-i18n="nav_rooms">🛏️ ოთახები</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">🖼️ გალერეა</a></li>
+            <li><a href="#location" data-i18n="nav_location">📍 ადგილმდებარეობა</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_title">კონტაქტი</h4>
+          <ul>
+            <li><a href="tel: 577 15 06 21">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                577 15 06 21
+              </a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=parkhotelimeri@gmail.com" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                parkhotelimeri@gmail.com
+              </a></li>
+            <li><a href="https://www.facebook.com/parkhotelimerikutaisi" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                Facebook
+              </a></li>
+            <li><a href="https://wa.me/995599297123" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                  </path>
+                </svg>
+                WhatsApp
+              </a></li>
+            <li><a href="https://maps.app.goo.gl/BnZ1eNeJbqru68ix8" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Google Maps
+              </a></li>
+            <li><a href="https://www.booking.com/hotel/ge/imeri-park.html?aid=304142" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Booking.com
+              </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">© 2024 იმერი. ყველა უფლება დაცულია.</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+<!-- შექმნა დავით ენდელაძემ -->
+
+</html>
